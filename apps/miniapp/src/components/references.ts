@@ -1,0 +1,2 @@
+const fields:Record<string,string>={title:'案件名称',cause:'起因',course:'案件经过',outcome:'当前结果',why:'对起因的理解',happened:'具体经过',disagreement:'主要分歧',discomfort:'感受及对应行为',ownFault:'自我反思',resolution:'解决期待'}
+export function refLabel(ref:string):string {if(ref==='context.participation')return '参与材料范围';if(ref.startsWith('image:'))return '截图 '+ref.slice(6,12);const [side,key]=ref.split('.');return (side==='A'?'甲方·':side==='B'?'乙方·':'')+(fields[key]||ref)}

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.data/
+.env
+.env.*.local
+*.log
+.cache/
+.swc/
+coverage/
+test-results/
+playwright-report/
+project.private.config.json

@@ -1,0 +1,3 @@
+import { defineConfig } from '@playwright/test'
+import base from './playwright.config'
+export default defineConfig({...base,testDir:'tests/production',outputDir:'test-results/production-traces',use:{...base.use,baseURL:'http://127.0.0.1:3003'},webServer:{command:'npm exec tsx apps/server/src/index.ts',url:'http://127.0.0.1:3003/api/health',reuseExistingServer:false,env:{PORT:'3003',HOST:'127.0.0.1',DB_PATH:'.data/production-e2e.sqlite',NODE_ENV:'production',LLM_MODE:'mock',DEV_ACCESS_TOKEN:'production-test-token',ALLOWED_ORIGINS:'http://127.0.0.1:3003'}},reporter:[['list'],['json',{outputFile:'test-results/production-results.json'}]]})

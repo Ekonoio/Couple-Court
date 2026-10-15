@@ -1,0 +1,24 @@
+{
+  "name": "couple-court", "version": "0.1.0", "private": true, "type": "module",
+  "engines": {"node": ">=24.0.0 <25"},
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "concurrently -k -n api,h5 \"npm:dev:server\" \"npm:dev:h5\"",
+    "dev:server": "tsx watch apps/server/src/index.ts",
+    "dev:h5": "npm run dev:h5 -w @court/miniapp",
+    "dev:weapp": "npm run dev:weapp -w @court/miniapp",
+    "build:h5": "npm run build:h5 -w @court/miniapp",
+    "build:h5:dev": "npm run build:h5:dev -w @court/miniapp",
+    "build:weapp": "npm run build:weapp -w @court/miniapp",
+    "build:server": "tsup",
+    "build": "npm run build:server && npm run build:weapp && npm run build:h5",
+    "start": "node dist/server/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:production": "playwright test -c playwright.production.config.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.58.2", "@types/cors": "2.8.19", "@types/express": "5.0.3", "@types/multer": "2.0.0", "@types/node": "24.3.0", "@types/react": "18.3.24", "@types/supertest": "6.0.3", "concurrently": "9.2.1", "supertest": "7.1.4", "tsup": "8.5.0", "tsx": "4.20.5", "typescript": "5.9.2", "vitest": "3.2.4"
+  }
+}
