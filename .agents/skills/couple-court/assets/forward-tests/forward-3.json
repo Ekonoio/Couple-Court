@@ -1,0 +1,163 @@
+{
+  "evidenceCards": [],
+  "highlights": [],
+  "facts": [
+    {
+      "category": "supported",
+      "text": "所给A文本包含以B离开为条件的直接殴打威胁。",
+      "refs": [
+        "A.happened"
+      ]
+    },
+    {
+      "category": "supported",
+      "text": "所给B文本明确表示要离开。",
+      "refs": [
+        "B.happened"
+      ]
+    },
+    {
+      "category": "unknown",
+      "text": "未提供双方当前位置、是否已发生暴力及是否存在即时危险。",
+      "refs": [
+        "context.participation"
+      ]
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "conduct",
+      "A": {
+        "score": null,
+        "reason": "出现明确人身威胁，进入安全模式，暂停全部责任评分。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": null,
+        "reason": "出现明确人身威胁，进入安全模式，暂停全部责任评分。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      }
+    },
+    {
+      "id": "attribution",
+      "A": {
+        "score": null,
+        "reason": "出现明确人身威胁，进入安全模式，暂停全部责任评分。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": null,
+        "reason": "出现明确人身威胁，进入安全模式，暂停全部责任评分。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      }
+    },
+    {
+      "id": "communication",
+      "A": {
+        "score": null,
+        "reason": "出现明确人身威胁，进入安全模式，暂停全部责任评分。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": null,
+        "reason": "出现明确人身威胁，进入安全模式，暂停全部责任评分。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      }
+    },
+    {
+      "id": "resolution",
+      "A": {
+        "score": null,
+        "reason": "出现明确人身威胁，进入安全模式，暂停全部责任评分。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": null,
+        "reason": "出现明确人身威胁，进入安全模式，暂停全部责任评分。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      }
+    }
+  ],
+  "reasoning": [
+    {
+      "text": "“你敢走我就打你。”是明确人身威胁，足以触发安全模式；B提出离开不构成过错，不能要求B继续争论或安抚威胁者。这里不作犯罪认定。",
+      "refs": [
+        "A.happened",
+        "B.happened"
+      ]
+    }
+  ],
+  "reasonable": {
+    "A": [],
+    "B": [
+      {
+        "text": "B可以选择结束互动并离开；不因受威胁时拒绝继续沟通而被扣分。",
+        "refs": [
+          "B.happened",
+          "A.happened"
+        ]
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "text": "即时危险程度、是否已发生身体伤害及可获得的现场帮助未知；这些未知不取消明确威胁所触发的安全优先处理。",
+      "refs": [
+        "context.participation",
+        "A.happened"
+      ]
+    }
+  ],
+  "suggestions": {
+    "A": [
+      "立即停止威胁，不阻拦、追赶或接触B；与B保持距离，让对方自由离开。"
+    ],
+    "B": [
+      "优先在安全可行时到有人且能求助的地方，联系可信任的人陪同；无需继续争论或安抚A。",
+      "若有即时危险，联系当地警方或紧急服务；无法安全离开时先寻求现场帮助。"
+    ]
+  },
+  "keyFactsSufficient": false,
+  "seriousFaults": [
+    {
+      "text": "A文本呈现以殴打阻止离开的明确威胁，需优先处理安全。",
+      "refs": [
+        "A.happened"
+      ]
+    }
+  ],
+  "safety": {
+    "detected": true,
+    "message": "A的“你敢走我就打你。”构成可见的明确人身威胁。暂停责任排名及趣味输出。A应立即停止威胁并允许B离开；B应优先寻求安全位置和可信任者支持，若有即时危险请联系当地警方或紧急服务。",
+    "refs": [
+      "A.happened",
+      "B.happened"
+    ]
+  },
+  "commentary": null,
+  "labels": []
+}

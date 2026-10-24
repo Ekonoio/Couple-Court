@@ -1,0 +1,209 @@
+{
+  "evidenceCards": [
+    {
+      "id": "A-communication",
+      "speaker": "A",
+      "side": "A",
+      "dimensionId": "communication",
+      "quote": "我现在情绪太激动，需要半小时冷静，八点回来聊。",
+      "ref": "A.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "A陈述自身情绪与暂停需要，没有辱骂或人格攻击；仅评估这段表达。",
+      "score": 0,
+      "behaviorId": null
+    },
+    {
+      "id": "B-communication",
+      "speaker": "B",
+      "side": "B",
+      "dimensionId": "communication",
+      "quote": "好，八点再聊。",
+      "ref": "B.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "B明确回应时间安排，未见攻击性表达；仅评估这段表达。",
+      "score": 0,
+      "behaviorId": null
+    },
+    {
+      "id": "A-resolution",
+      "speaker": "A",
+      "side": "A",
+      "dimensionId": "resolution",
+      "quote": "需要半小时冷静，八点回来聊。",
+      "ref": "A.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "A提出有时限且有返回时间的正常暂停，不是惩罚性拒绝沟通。",
+      "score": 0,
+      "behaviorId": null
+    },
+    {
+      "id": "B-resolution",
+      "speaker": "B",
+      "side": "B",
+      "dimensionId": "resolution",
+      "quote": "好，八点再聊。",
+      "ref": "B.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "B接受恢复沟通的时间，当前片段未见阻碍协商。",
+      "score": 0,
+      "behaviorId": null
+    }
+  ],
+  "highlights": [],
+  "facts": [
+    {
+      "category": "supported",
+      "text": "提供的文本中，A说明情绪激动，提出暂停半小时并于八点回来聊；B表示八点再聊。",
+      "refs": [
+        "A.happened",
+        "B.happened"
+      ]
+    },
+    {
+      "category": "unknown",
+      "text": "未提供暂停之前的争执及八点之后是否恢复沟通。",
+      "refs": [
+        "context.participation"
+      ]
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "conduct",
+      "A": {
+        "score": null,
+        "reason": "只有局部表达，缺少该维度相关行为及前后事实，无法审查。",
+        "refs": [
+          "A.happened",
+          "context.participation"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": null,
+        "reason": "只有局部表达，缺少该维度相关行为及前后事实，无法审查。",
+        "refs": [
+          "B.happened",
+          "context.participation"
+        ],
+        "behaviorIds": []
+      }
+    },
+    {
+      "id": "attribution",
+      "A": {
+        "score": null,
+        "reason": "只有局部表达，缺少该维度相关行为及前后事实，无法审查。",
+        "refs": [
+          "A.happened",
+          "context.participation"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": null,
+        "reason": "只有局部表达，缺少该维度相关行为及前后事实，无法审查。",
+        "refs": [
+          "B.happened",
+          "context.participation"
+        ],
+        "behaviorIds": []
+      }
+    },
+    {
+      "id": "communication",
+      "A": {
+        "score": 0,
+        "reason": "A陈述自身情绪与暂停需要，没有辱骂或人格攻击；仅评估这段表达。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": 0,
+        "reason": "B明确回应时间安排，未见攻击性表达；仅评估这段表达。",
+        "refs": [
+          "B.happened"
+        ],
+        "behaviorIds": []
+      }
+    },
+    {
+      "id": "resolution",
+      "A": {
+        "score": 0,
+        "reason": "A提出有时限且有返回时间的正常暂停，不是惩罚性拒绝沟通。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": 0,
+        "reason": "B接受恢复沟通的时间，当前片段未见阻碍协商。",
+        "refs": [
+          "B.happened"
+        ],
+        "behaviorIds": []
+      }
+    }
+  ],
+  "reasoning": [
+    {
+      "text": "正常约定暂停不构成冷处理或安全风险。已审查的表达与处理方式均为0；缺少其他事实，不能推出双方完整责任均为0。",
+      "refs": [
+        "A.happened",
+        "B.happened",
+        "context.participation"
+      ]
+    }
+  ],
+  "reasonable": {
+    "A": [
+      {
+        "text": "情绪激动时提出有返回时间的暂停。",
+        "refs": [
+          "A.happened"
+        ]
+      }
+    ],
+    "B": [
+      {
+        "text": "明确接受暂停和恢复时间。",
+        "refs": [
+          "B.happened"
+        ]
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "text": "缺少原争执的行为、约定、事实主张及后续履约情况；conduct与attribution保留null，不比较完整责任。",
+      "refs": [
+        "context.participation"
+      ]
+    }
+  ],
+  "suggestions": {
+    "A": [
+      "可按约八点恢复沟通；若仍需时间，提前说明并协商新时间。"
+    ],
+    "B": [
+      "可在八点确认是否方便继续；若时间不合适，可以提出替代时间。"
+    ]
+  },
+  "keyFactsSufficient": false,
+  "seriousFaults": [],
+  "safety": {
+    "detected": false,
+    "message": "",
+    "refs": []
+  },
+  "commentary": null,
+  "labels": []
+}

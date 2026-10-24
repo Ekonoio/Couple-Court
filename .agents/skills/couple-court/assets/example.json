@@ -1,0 +1,238 @@
+{
+  "facts": [
+    {
+      "category": "agreed",
+      "text": "双方确认甲方改约未通知。",
+      "refs": [
+        "A.happened",
+        "B.happened"
+      ]
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "conduct",
+      "A": {
+        "score": 2,
+        "reason": "明确改约未通知，造成不便；未见更严重影响。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": [
+          "change-appointment"
+        ]
+      },
+      "B": {
+        "score": 0,
+        "reason": "已审查此维度，未见明显过错。",
+        "refs": [
+          "B.happened"
+        ],
+        "behaviorIds": []
+      }
+    },
+    {
+      "id": "attribution",
+      "A": {
+        "score": 0,
+        "reason": "已审查此维度，未见明显过错。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": 0,
+        "reason": "已审查此维度，未见明显过错。",
+        "refs": [
+          "B.happened"
+        ],
+        "behaviorIds": []
+      }
+    },
+    {
+      "id": "communication",
+      "A": {
+        "score": 0,
+        "reason": "已审查此维度，未见明显过错。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": 0,
+        "reason": "已审查此维度，未见明显过错。",
+        "refs": [
+          "B.happened"
+        ],
+        "behaviorIds": []
+      }
+    },
+    {
+      "id": "resolution",
+      "A": {
+        "score": 0,
+        "reason": "已审查此维度，未见明显过错。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": 0,
+        "reason": "已审查此维度，未见明显过错。",
+        "refs": [
+          "B.happened"
+        ],
+        "behaviorIds": []
+      }
+    }
+  ],
+  "reasoning": [
+    {
+      "text": "仅裁决本次改约行为。",
+      "refs": [
+        "A.happened",
+        "B.happened"
+      ]
+    }
+  ],
+  "reasonable": {
+    "A": [],
+    "B": []
+  },
+  "uncertainties": [],
+  "suggestions": {
+    "A": [
+      "下次改约提前通知并确认新的时间。"
+    ],
+    "B": [
+      "说明等待造成的不便，再决定是否接受新时间。"
+    ]
+  },
+  "keyFactsSufficient": true,
+  "seriousFaults": [],
+  "safety": {
+    "detected": false,
+    "message": "",
+    "refs": []
+  },
+  "commentary": null,
+  "labels": [],
+  "evidenceCards": [
+    {
+      "id": "A-conduct",
+      "speaker": "A",
+      "side": "A",
+      "dimensionId": "conduct",
+      "quote": "我临时改了约定，忘记通知你。",
+      "ref": "A.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "明确改约未通知，造成不便；未见更严重影响。",
+      "score": 2,
+      "behaviorId": "change-appointment"
+    },
+    {
+      "id": "B-conduct",
+      "speaker": "B",
+      "side": "B",
+      "dimensionId": "conduct",
+      "quote": "我知道你忘了通知。",
+      "ref": "B.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "已审查此维度，未见明显过错。",
+      "score": 0,
+      "behaviorId": null
+    },
+    {
+      "id": "A-attribution",
+      "speaker": "A",
+      "side": "A",
+      "dimensionId": "attribution",
+      "quote": "我没有说你不在乎我。",
+      "ref": "A.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "已审查此维度，未见明显过错。",
+      "score": 0,
+      "behaviorId": null
+    },
+    {
+      "id": "B-attribution",
+      "speaker": "B",
+      "side": "B",
+      "dimensionId": "attribution",
+      "quote": "我不猜你动机。",
+      "ref": "B.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "已审查此维度，未见明显过错。",
+      "score": 0,
+      "behaviorId": null
+    },
+    {
+      "id": "A-communication",
+      "speaker": "A",
+      "side": "A",
+      "dimensionId": "communication",
+      "quote": "我不骂你。",
+      "ref": "A.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "已审查此维度，未见明显过错。",
+      "score": 0,
+      "behaviorId": null
+    },
+    {
+      "id": "B-communication",
+      "speaker": "B",
+      "side": "B",
+      "dimensionId": "communication",
+      "quote": "我不骂你。",
+      "ref": "B.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "已审查此维度，未见明显过错。",
+      "score": 0,
+      "behaviorId": null
+    },
+    {
+      "id": "A-resolution",
+      "speaker": "A",
+      "side": "A",
+      "dimensionId": "resolution",
+      "quote": "我愿意重新约时间。",
+      "ref": "A.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "已审查此维度，未见明显过错。",
+      "score": 0,
+      "behaviorId": null
+    },
+    {
+      "id": "B-resolution",
+      "speaker": "B",
+      "side": "B",
+      "dimensionId": "resolution",
+      "quote": "我同意重新约时间。",
+      "ref": "B.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "已审查此维度，未见明显过错。",
+      "score": 0,
+      "behaviorId": null
+    }
+  ],
+  "highlights": [
+    {
+      "kind": "rewrite",
+      "text": "我临时有事，原定时间来不了。你看改到明晚可以吗？",
+      "evidenceIds": [
+        "A-conduct"
+      ]
+    }
+  ]
+}

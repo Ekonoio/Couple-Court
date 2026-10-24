@@ -1,0 +1,4 @@
+interface:
+  display_name: "情侣法庭"
+  short_description: "按聊天证据裁决本次争执，独立评分并输出小程序结构化卡片数据"
+  default_prompt: "使用 $couple-court 分析双方聊天，依据固定规则评分并返回可校验 JSON。"

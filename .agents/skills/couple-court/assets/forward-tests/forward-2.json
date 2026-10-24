@@ -1,0 +1,186 @@
+{
+  "evidenceCards": [
+    {
+      "id": "A-communication",
+      "speaker": "A",
+      "side": "A",
+      "dimensionId": "communication",
+      "quote": "我当场说我不同意，也不许他这样说你。",
+      "ref": "A.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "A明确反对朋友的辱骂。被引用的侮辱属于第三方，不能算作A对B的人格攻击。",
+      "score": 0,
+      "behaviorId": null
+    },
+    {
+      "id": "B-communication",
+      "speaker": "B",
+      "side": "B",
+      "dimensionId": "communication",
+      "quote": "谢谢你没有认同他。",
+      "ref": "B.happened",
+      "kind": "statement",
+      "verification": "text_match",
+      "reason": "B表达感谢，没有人格攻击；仅评估已提供的表达。",
+      "score": 0,
+      "behaviorId": null
+    }
+  ],
+  "highlights": [],
+  "facts": [
+    {
+      "category": "unilateral",
+      "text": "A陈述朋友说了贬损话，并称自己当场反对、阻止。朋友的原话与当场过程没有独立记录。",
+      "refs": [
+        "A.happened"
+      ]
+    },
+    {
+      "category": "agreed",
+      "text": "A表示不认同朋友的贬损话，B明确感谢A没有认同；双方材料在A不认同这一点上一致。",
+      "refs": [
+        "A.happened",
+        "B.happened"
+      ]
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "conduct",
+      "A": {
+        "score": null,
+        "reason": "只有局部表达，缺少该维度相关行为及前后事实，无法审查。",
+        "refs": [
+          "A.happened",
+          "context.participation"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": null,
+        "reason": "只有局部表达，缺少该维度相关行为及前后事实，无法审查。",
+        "refs": [
+          "B.happened",
+          "context.participation"
+        ],
+        "behaviorIds": []
+      }
+    },
+    {
+      "id": "attribution",
+      "A": {
+        "score": null,
+        "reason": "只有局部表达，缺少该维度相关行为及前后事实，无法审查。",
+        "refs": [
+          "A.happened",
+          "context.participation"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": null,
+        "reason": "只有局部表达，缺少该维度相关行为及前后事实，无法审查。",
+        "refs": [
+          "B.happened",
+          "context.participation"
+        ],
+        "behaviorIds": []
+      }
+    },
+    {
+      "id": "communication",
+      "A": {
+        "score": 0,
+        "reason": "A明确反对朋友的辱骂。被引用的侮辱属于第三方，不能算作A对B的人格攻击。",
+        "refs": [
+          "A.happened"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": 0,
+        "reason": "B表达感谢，没有人格攻击；仅评估已提供的表达。",
+        "refs": [
+          "B.happened"
+        ],
+        "behaviorIds": []
+      }
+    },
+    {
+      "id": "resolution",
+      "A": {
+        "score": null,
+        "reason": "只有局部表达，缺少该维度相关行为及前后事实，无法审查。",
+        "refs": [
+          "A.happened",
+          "context.participation"
+        ],
+        "behaviorIds": []
+      },
+      "B": {
+        "score": null,
+        "reason": "只有局部表达，缺少该维度相关行为及前后事实，无法审查。",
+        "refs": [
+          "B.happened",
+          "context.participation"
+        ],
+        "behaviorIds": []
+      }
+    }
+  ],
+  "reasoning": [
+    {
+      "text": "先区分引用内容和说话者立场：A转述第三方辱骂并明确拒绝认同，不能因出现侮辱词就给A扣分。B的感谢支持A不认同，但不等于核实当场全部细节。",
+      "refs": [
+        "A.happened",
+        "B.happened"
+      ]
+    }
+  ],
+  "reasonable": {
+    "A": [
+      {
+        "text": "明确拒绝认同针对伴侣的侮辱。",
+        "refs": [
+          "A.happened"
+        ]
+      }
+    ],
+    "B": [
+      {
+        "text": "具体表达对A不认同侮辱的感谢。",
+        "refs": [
+          "B.happened"
+        ]
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "text": "仅有短片段，缺少相关约定、第三方事件完整记录、事实归因争议和双方后续处理；conduct、attribution、resolution均无法完整审查。",
+      "refs": [
+        "context.participation",
+        "A.happened",
+        "B.happened"
+      ]
+    }
+  ],
+  "suggestions": {
+    "A": [
+      "可以继续明确拒绝侮辱，并询问B希望如何处理与这位朋友的后续接触。"
+    ],
+    "B": [
+      "如仍感到受伤，可以说明希望得到的支持，也可以选择暂不谈这件事。"
+    ]
+  },
+  "keyFactsSufficient": false,
+  "seriousFaults": [],
+  "safety": {
+    "detected": false,
+    "message": "",
+    "refs": []
+  },
+  "commentary": null,
+  "labels": []
+}
